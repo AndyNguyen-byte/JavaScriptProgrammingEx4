@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday</title>
+    <script>
+      alert('Hello you from embedded JavaScript. This is my first HTML and JavaScript application');
+
+      let year = prompt('Enter Birth Year',0);
+      let month = prompt('Enter Birth Month',0);
+      let day = prompt('Enter Birth day',0);
+      let birthDate = year + month +day;
+      let now=new Date();
+      console.log(`Year: ${now.getFullYear()}`);
+
+
+    </script>
+  </head>
+  <body>
+    <h1>HTML and JavaScript Demo Exercise 4</h1>
+    <!-- <script>
+      document.write(
+        `<p>The input <strong>${isTheInputNumeric}</strong> is not numeric, true or false?</p>`
+      );
+      document.write(`<p>${isNaN(isTheInputNumeric)}</p>`);
+      document.write(`<p>My current url is: <em>${window.location}</em></p>`);
+    </script> -->
+  </body>
+</html>
