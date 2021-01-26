@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      // alert('Hello you from embedded JavaScript. This is my first HTML and JavaScript application');
+            // alert('Hello you from embedded JavaScript. This is my first HTML and JavaScript application');
 
-      // let a = prompt('Value 1',0);
-      // let b = prompt('Value 2',0);
-      // let c = a + b ;
-      // alert(c);
+            // let a = prompt('Value 1',0);
+            // let b = prompt('Value 2',0);
+            // let c = a + b ;
+            // alert(c);
 
-      // let d = parseInt(a);
-      // let e = parseInt(b);
-      // let f = d + e ;
-      // alert (f);
-      // console.log(`The value of f is :${f}`);
+            // let d = parseInt(a);
+            // let e = parseInt(b);
+            // let f = d + e ;
+            // alert (f);
+            // console.log(`The value of f is :${f}`);
+      try {
+        let numberOrLetterInput = prompt('Please enter a number or a letter');
+        if (isNaN(numberOrLetterInput)) {
+          throw new Error('Inputs are invalid.');
+        }
+      } catch (error){
+        alert(error.message);
+      }
 
-      let isTheInputNumeric = prompt("Enter a letter or number: ");
+            let isTheInputNumeric = prompt("Enter a letter or number: ");
     </script>
     <script src="app.js"></script>
   </head>
